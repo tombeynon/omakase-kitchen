@@ -5,8 +5,9 @@ site "http://community.opscode.com/api/v1"
 
 cookbook "apt"
 cookbook "build-essential"
-cookbook "rbenv",
-  git: "https://github.com/fnichol/chef-rbenv.git"
+cookbook "rbenv", git: "https://github.com/fnichol/chef-rbenv.git"
 cookbook "ruby_build"
 cookbook "nginx"
 cookbook "runit"
+cookbook "monit"
+cookbook "mysql"

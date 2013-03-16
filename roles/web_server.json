@@ -1,0 +1,35 @@
+{
+  "json_class": "Chef::Role",
+  "name": "web_server",
+  "description": "Rails application and web server",
+
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[users]",
+    "recipe[ruby_build]",
+    "recipe[runit]",
+    "recipe[rbenv::user]",
+    "recipe[nginx::source]",
+    "recipe[monit]",
+    "recipe[mysql::client]"
+  ],
+
+  "default_attributes": {
+    "users": {
+      "rails": {
+        "password": "$1$Y/F6VWXs$bP/lHZx3hDED/gmzggg6N.",
+        "ssh_keys": [],
+        "shell": "/bin/bash"
+      }
+    },
+
+    "rbenv": {
+      "user_installs": [{
+        "user": "rails",
+        "rubies": ["1.9.3-p392"],
+        "global": "1.9.3-p392"
+      }]
+    }
+  }
+}

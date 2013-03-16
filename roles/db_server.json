@@ -1,0 +1,20 @@
+{
+  "json_class": "Chef::Role",
+  "name": "db_server",
+  "description": "MySQL database server",
+
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[monit]",
+    "recipe[mysql::server]"
+  ],
+
+  "default_attributes": {
+    "mysql": {
+      "server_root_password": "ins3cure",
+      "server_repl_password": "ins3cure",
+      "server_debian_password": "ins3cure"
+    }
+  }
+}
