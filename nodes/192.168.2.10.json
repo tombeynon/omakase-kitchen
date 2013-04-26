@@ -1,0 +1,22 @@
+{
+  "run_list": [
+    "role[common]",
+    "role[web_server]",
+    "role[search_server]",
+    "role[rails_app_server]"
+  ],
+
+  "rbenv": {
+    "user_installs": [{
+      "user": "rails",
+      "rubies": ["1.9.3-p392", "1.9.2-p290"],
+      "global": "1.9.3-p392",
+      "gems": {
+        "1.9.2-p290": [
+          {"name": "bundler"}
+        ]
+      }
+    }]
+  }
+
+}

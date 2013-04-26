@@ -1,0 +1,9 @@
+{
+  "json_class": "Chef::Role",
+  "name": "search_server",
+  "description": "Sphinx search server",
+
+  "run_list": [
+    "recipe[sphinx]"
+  ]
+}

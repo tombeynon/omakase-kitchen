@@ -1,0 +1,27 @@
+{
+  "id": "app_one",
+  "environments": {
+    "staging": {
+      "unicorn_workers": 1,
+      "rbenv_string": "1.9.2-p290",
+      "domains": ["app_one.staging.example.com"],
+      "database": {
+        "host": "db.example.com",
+        "user": "app_one_staging",
+        "password": "ins3cure",
+        "database": "app_one_staging"
+      }
+    },
+    "production": {
+      "unicorn_workers": 2,
+      "rbenv_string": "1.9.2-p290",
+      "domains": ["app_one.example.com"],
+      "database": {
+        "host": "db.example.com",
+        "user": "app_one_production",
+        "password": "ins3cure",
+        "database": "app_one_production"
+      }
+    }
+  }
+}

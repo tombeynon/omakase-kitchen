@@ -1,0 +1,11 @@
+{
+  "json_class": "Chef::Role",
+  "name": "common",
+  "description": "Common packages and settings",
+
+  "run_list": [
+    "recipe[curl::devel]",
+    "recipe[tmux]",
+    "recipe[htop]"
+  ]
+}

@@ -16,10 +16,23 @@
   ],
 
   "default_attributes": {
+
+    "admin_user": "rawnet",
+    "rails_app_user": "rails",
+
     "users": {
       "rails": {
+        "group": "rails",
         "password": "$1$Y/F6VWXs$bP/lHZx3hDED/gmzggg6N.",
-        "ssh_keys": [],
+        "shell": "/bin/bash",
+        "dotfiles": {
+          ".gemrc": "gem: --no-ri --no-rdoc"
+        }
+      },
+      "rawnet": {
+        "group": "rawnet",
+        "groups": ["sudo"],
+        "password": "$1$Y/F6VWXs$bP/lHZx3hDED/gmzggg6N.",
         "shell": "/bin/bash"
       }
     },
@@ -31,5 +44,6 @@
         "global": "1.9.3-p392"
       }]
     }
+
   }
 }

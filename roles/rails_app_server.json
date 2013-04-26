@@ -1,0 +1,12 @@
+{
+  "json_class": "Chef::Role",
+  "name": "rails_app_server",
+  "description": "Rails application server",
+
+  "run_list": [
+    "recipe[nodejs]",
+    "recipe[rails_app::files]",
+    "recipe[imagemagick]",
+    "recipe[imagemagick::devel]"
+  ]
+}

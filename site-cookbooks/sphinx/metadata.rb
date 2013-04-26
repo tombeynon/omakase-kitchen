@@ -1,0 +1,5 @@
+maintainer        "Tom Beynon"
+maintainer_email  "tbeynon@rawnet.com"
+description       "Creates Sphinx package"
+version           "0.1"
+depends           "apt"

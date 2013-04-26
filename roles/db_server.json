@@ -14,7 +14,8 @@
     "mysql": {
       "server_root_password": "ins3cure",
       "server_repl_password": "ins3cure",
-      "server_debian_password": "ins3cure"
+      "server_debian_password": "ins3cure",
+      "bind_address": "0.0.0.0"
     }
   }
 }

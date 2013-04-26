@@ -5,9 +5,18 @@ site "http://community.opscode.com/api/v1"
 
 cookbook "apt"
 cookbook "build-essential"
+
 cookbook "rbenv", git: "https://github.com/fnichol/chef-rbenv.git"
 cookbook "ruby_build"
 cookbook "nginx"
 cookbook "runit"
 cookbook "monit"
 cookbook "mysql"
+
+cookbook "nodejs"
+cookbook "database"
+cookbook "imagemagick"
+
+cookbook "tmux"
+cookbook "htop"
+cookbook "curl", git: "https://github.com/phlipper/chef-curl.git"

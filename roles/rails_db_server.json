@@ -1,0 +1,10 @@
+{
+  "json_class": "Chef::Role",
+  "name": "rails_db_server",
+  "description": "Rails database server",
+
+  "run_list": [
+    "recipe[database::mysql]",
+    "recipe[rails_app::databases]"
+  ]
+}
