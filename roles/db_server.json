@@ -4,8 +4,6 @@
   "description": "MySQL database server",
 
   "run_list": [
-    "recipe[apt]",
-    "recipe[build-essential]",
     "recipe[monit]",
     "recipe[mysql::server]"
   ],

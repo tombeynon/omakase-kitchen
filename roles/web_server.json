@@ -4,8 +4,6 @@
   "description": "Rails application and web server",
 
   "run_list": [
-    "recipe[apt]",
-    "recipe[build-essential]",
     "recipe[users]",
     "recipe[ruby_build]",
     "recipe[runit]",
