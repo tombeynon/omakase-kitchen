@@ -20,7 +20,7 @@ rails_apps.each do |app_name|
 
     # Create the capistrano directories
     %w(releases shared shared/assets shared/config shared/log
-     shared/pids shared/system shared/tmp shared/sockets).each do |dir|
+     shared/pids shared/system shared/tmp shared/sockets shared/db shared/db/sphinx).each do |dir|
       directory "#{environment_root}/#{dir}" do
         owner rails_user
         group rails_user
