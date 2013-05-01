@@ -60,6 +60,13 @@ GIT
     rails_app (0.1.0)
       build-essential (>= 0.0.0)
 
+GIT
+  remote: https://github.com/thoughtless/ruby-shadow-cookbook.git
+  ref: master
+  sha: b0eac90128b63ca4fddc42b7db1afb3965eb946a
+  specs:
+    ruby-shadow (0.0.1)
+
 DEPENDENCIES
   apt (>= 0)
   build-essential (>= 0)
@@ -73,6 +80,7 @@ DEPENDENCIES
   nodejs (>= 0)
   rails_app (>= 0)
   rbenv (>= 0)
+  ruby-shadow (>= 0)
   ruby_build (>= 0)
   runit (>= 0)
   tmux (>= 0)
