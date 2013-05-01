@@ -61,6 +61,22 @@ GIT
       build-essential (>= 0.0.0)
 
 GIT
+  remote: https://github.com/rawnet/chef-sphinx.git
+  ref: master
+  sha: a173ab679886b853f23c15350a1ff6480f0d504a
+  specs:
+    sphinx (0.1.0)
+      apt (>= 0.0.0)
+
+GIT
+  remote: https://github.com/rawnet/chef-users.git
+  ref: master
+  sha: 4ccc79fa48edb4ab6206c4a37494d1b9144b4729
+  specs:
+    users (0.1.0)
+      ruby-shadow (>= 0.0.0)
+
+GIT
   remote: https://github.com/thoughtless/ruby-shadow-cookbook.git
   ref: master
   sha: b0eac90128b63ca4fddc42b7db1afb3965eb946a
@@ -83,6 +99,8 @@ DEPENDENCIES
   ruby-shadow (>= 0)
   ruby_build (>= 0)
   runit (>= 0)
+  sphinx (>= 0)
   tmux (>= 0)
+  users (>= 0)
   vim (>= 0)
 
