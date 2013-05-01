@@ -52,6 +52,14 @@ GIT
   specs:
     curl (1.0.0)
 
+GIT
+  remote: https://github.com/rawnet/chef_rails_app.git
+  ref: master
+  sha: 9f20534f183d49eba000082a82b9b00c0c66cc65
+  specs:
+    rails_app (0.1.0)
+      build-essential (>= 0.0.0)
+
 DEPENDENCIES
   apt (>= 0)
   build-essential (>= 0)
@@ -63,6 +71,7 @@ DEPENDENCIES
   mysql (>= 0)
   nginx (>= 0)
   nodejs (>= 0)
+  rails_app (>= 0)
   rbenv (>= 0)
   ruby_build (>= 0)
   runit (>= 0)

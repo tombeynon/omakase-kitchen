@@ -17,6 +17,8 @@ cookbook "nodejs"
 cookbook "database"
 cookbook "imagemagick"
 
+cookbook "rails_app", git: "https://github.com/rawnet/chef_rails_app.git"
+
 cookbook "tmux"
 cookbook "htop"
 cookbook "curl", git: "https://github.com/phlipper/chef-curl.git"
