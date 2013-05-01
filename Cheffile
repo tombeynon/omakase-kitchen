@@ -17,7 +17,7 @@ cookbook "nodejs"
 cookbook "database"
 cookbook "imagemagick"
 
-cookbook "rails_app", git: "https://github.com/rawnet/chef_rails_app.git"
+cookbook "rails-app", git: "https://github.com/rawnet/chef-rails-app.git"
 cookbook "ruby-shadow", git: "https://github.com/thoughtless/ruby-shadow-cookbook.git"
 
 cookbook "tmux"
