@@ -26,7 +26,7 @@ node[:users].each do |name, conf|
   # Create the home dir
   directory home_dir do
     owner name
-    mode 0700
+    mode 0755
   end
 
   # Create the .ssh dir
