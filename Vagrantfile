@@ -15,6 +15,5 @@ Vagrant.configure("2") do |config|
 		db_config.vm.network :private_network, 
 			ip: "192.168.2.11"
 	end
-	
   
 end
