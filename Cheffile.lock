@@ -55,7 +55,7 @@ GIT
 GIT
   remote: https://github.com/rawnet/chef-rails-app.git
   ref: master
-  sha: 9f20534f183d49eba000082a82b9b00c0c66cc65
+  sha: 676c8a833525f6e4672fe134b10729e89ecea6f7
   specs:
     rails-app (0.1.0)
       build-essential (>= 0.0.0)
