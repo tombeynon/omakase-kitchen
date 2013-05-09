@@ -3,5 +3,7 @@
     "role[common]",
     "role[db_server]",
     "role[rails_db_server]"
-  ]
+  ],
+
+	"rails_apps": ["app_one", "app_two"]
 }

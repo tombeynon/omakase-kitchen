@@ -6,6 +6,8 @@
     "role[rails_app_server]"
   ],
 
+	"rails_apps": ["app_one", "app_two"],
+
   "rbenv": {
     "user_installs": [{
       "user": "rails",
