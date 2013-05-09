@@ -8,5 +8,12 @@
     "recipe[rails-app::files]",
     "recipe[imagemagick]",
     "recipe[imagemagick::devel]"
-  ]
+  ],
+
+	"default_attributes": {
+		"rails_app": {
+			"admin_user": "rawnet",
+	    "rails_user": "rails"
+		}
+	}
 }

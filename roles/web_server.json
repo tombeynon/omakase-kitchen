@@ -15,9 +15,6 @@
 
   "default_attributes": {
 
-    "admin_user": "rawnet",
-    "rails_app_user": "rails",
-
     "users": {
       "rails": {
         "group": "rails",

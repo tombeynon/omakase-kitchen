@@ -6,7 +6,15 @@
     "role[rails_app_server]"
   ],
 
-	"rails_apps": ["app_one", "app_two"],
+	"rails_app": {
+		"apps": [{
+			"name": "app_one",
+			"environments": ["staging", "production"]
+		},{
+			"name": "app_two",
+			"environments": ["staging", "production"]
+		}]
+	},
 
   "rbenv": {
     "user_installs": [{
