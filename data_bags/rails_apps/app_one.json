@@ -5,6 +5,7 @@
       "unicorn_workers": 1,
       "rbenv_string": "1.9.2-p290",
       "domains": ["app_one.staging.example.com"],
+			"local_domains": ["app_one-staging"],
       "database": {
         "host": "db.example.com",
         "user": "app_one_staging",
@@ -16,6 +17,7 @@
       "unicorn_workers": 2,
       "rbenv_string": "1.9.2-p290",
       "domains": ["app_one.example.com"],
+			"local_domains": ["app_one-production"],
       "database": {
         "host": "db.example.com",
         "user": "app_one_production",
