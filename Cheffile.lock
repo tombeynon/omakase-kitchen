@@ -9,6 +9,7 @@ SITE
       mysql (>= 1.3.0)
       postgresql (>= 1.0.0)
       xfs (>= 0.0.0)
+    hostsfile (1.0.1)
     htop (1.0.0)
     imagemagick (0.2.2)
     monit (0.7.0)
@@ -55,10 +56,12 @@ GIT
 GIT
   remote: https://github.com/rawnet/chef-rails-app.git
   ref: master
-  sha: b4b5ea8ffca79b8a8b1840f5b995f75c24808753
+  sha: 15661257af8ae4a2a408be0df374bb6546a42f49
   specs:
     rails-app (0.1.0)
       build-essential (>= 0.0.0)
+      database (>= 0.0.0)
+      hostsfile (>= 0.0.0)
 
 GIT
   remote: https://github.com/rawnet/chef-sphinx.git
