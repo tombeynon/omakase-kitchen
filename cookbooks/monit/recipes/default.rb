@@ -1,6 +1,4 @@
-package "monit" do
-  action :install
-end
+package "monit"
 
 if platform?("ubuntu")
   cookbook_file "/etc/default/monit" do
@@ -12,17 +10,9 @@ if platform?("ubuntu")
 end
 
 service "monit" do
-  action :start
+  action [:enable, :start]
   enabled true
   supports [:start, :restart, :stop]
-end
-
-template "/etc/monit/monitrc" do
-  owner "root"
-  group "root"
-  mode 0700
-  source 'monitrc.erb'
-  notifies :restart, resources(:service => "monit"), :immediate
 end
 
 directory "/etc/monit/conf.d/" do
@@ -31,4 +21,12 @@ directory "/etc/monit/conf.d/" do
   mode 0755
   action :create
   recursive true
+end
+
+template "/etc/monit/monitrc" do
+  owner "root"
+  group "root"
+  mode 0700
+  source 'monitrc.erb'
+  notifies :restart, resources(:service => "monit"), :delayed
 end
