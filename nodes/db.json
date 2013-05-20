@@ -1,4 +1,6 @@
 {
+	"chef_environment": "master",
+	
   "run_list": [
     "role[common]",
     "role[db_server]",
