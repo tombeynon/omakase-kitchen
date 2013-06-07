@@ -4,16 +4,34 @@
   "description": "MySQL database server",
 
   "run_list": [
+    "recipe[users]",
+    "recipe[sudo]",
     "recipe[monit]",
     "recipe[mysql::server]"
   ],
 
   "default_attributes": {
+
     "mysql": {
       "server_root_password": "ins3cure",
       "server_repl_password": "ins3cure",
       "server_debian_password": "ins3cure",
       "bind_address": "0.0.0.0"
+    },
+
+    "users": {
+      "rawnet": {
+        "group": "rawnet",
+        "password": "$1$Y/F6VWXs$bP/lHZx3hDED/gmzggg6N.",
+        "shell": "/bin/bash"
+      }
+    },
+
+    "authorization": {
+      "sudo": {
+        "users": ["rawnet"]
+      }
     }
+
   }
 }

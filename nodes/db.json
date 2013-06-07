@@ -7,6 +7,8 @@
     "role[rails_db_server]"
   ],
 
+	"set_fqdn": "Db1",
+
 	"rails_app": {
 		"apps": [{
 			"name": "app_one",

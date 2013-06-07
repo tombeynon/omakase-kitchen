@@ -1,9 +1,9 @@
 {
   "id": "app_two",
+  "rbenv_string": "1.9.2-p290",
   "environments": {
     "staging": {
       "unicorn_workers": 1,
-      "rbenv_string": "1.9.2-p290",
       "domains": ["app_two.staging.example.com"],
 			"local_domains": ["app_two-staging"],
       "database": {
@@ -15,7 +15,6 @@
     },
     "production": {
       "unicorn_workers": 2,
-      "rbenv_string": "1.9.2-p290",
       "domains": ["app_two.example.com"],
 			"local_domains": ["app_two-production"],
       "database": {

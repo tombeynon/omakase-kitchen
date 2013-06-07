@@ -6,9 +6,17 @@
   "run_list": [
 		"recipe[apt]",
     "recipe[build-essential]",
+    "recipe[hostname]",
     "recipe[curl::devel]",
-		"recipe[vim]",
+    "recipe[vim]",
     "recipe[tmux]",
     "recipe[htop]"
-  ]
+  ],
+
+  "default_attributes": {
+    "build_essential": {
+      "compiletime": true
+    }
+  }
+
 }

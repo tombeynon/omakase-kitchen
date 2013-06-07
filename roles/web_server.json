@@ -5,6 +5,7 @@
 
   "run_list": [
     "recipe[users]",
+    "recipe[sudo]",
     "recipe[ruby_build]",
     "recipe[runit]",
     "recipe[rbenv::user]",
@@ -14,10 +15,11 @@
   ],
 
   "default_attributes": {
-
+		
     "users": {
       "rails": {
         "group": "rails",
+        "groups": ["adm"],
         "password": "$1$Y/F6VWXs$bP/lHZx3hDED/gmzggg6N.",
         "shell": "/bin/bash",
         "dotfiles": {
@@ -26,9 +28,15 @@
       },
       "rawnet": {
         "group": "rawnet",
-        "groups": ["sudo"],
+        "groups": ["adm"],
         "password": "$1$Y/F6VWXs$bP/lHZx3hDED/gmzggg6N.",
         "shell": "/bin/bash"
+      }
+    },
+
+    "authorization": {
+      "sudo": {
+        "users": ["rawnet"]
       }
     },
 

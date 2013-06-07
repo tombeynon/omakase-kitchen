@@ -8,6 +8,8 @@
     "role[rails_app_server]"
   ],
 
+	"set_fqdn": "Web1",
+
 	"rails_app": {
 		"apps": [{
 			"name": "app_one",
