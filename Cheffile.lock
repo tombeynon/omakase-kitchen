@@ -1,10 +1,10 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    apt (1.9.2)
+    apt (1.10.0)
     aws (0.101.0)
     build-essential (1.4.0)
-    database (1.3.12)
+    database (1.4.0)
       aws (>= 0.0.0)
       mysql (>= 1.3.0)
       postgresql (>= 1.0.0)
@@ -29,11 +29,11 @@ SITE
       build-essential (>= 0.0.0)
     ohai (1.1.8)
     openssl (1.0.2)
-    postgresql (2.4.0)
+    postgresql (3.0.0)
       apt (>= 0.0.0)
       build-essential (>= 0.0.0)
       openssl (>= 0.0.0)
-    ruby_build (0.7.2)
+    ruby_build (0.8.0)
     runit (1.1.4)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
@@ -46,7 +46,7 @@ SITE
 GIT
   remote: https://github.com/fnichol/chef-rbenv.git
   ref: master
-  sha: 3b1c59abc1134a50b0b8844954eca9a566aaffb8
+  sha: 9afb4e5da2e6212504a12de3bbbd410cd96100f6
   specs:
     rbenv (0.7.3)
 
@@ -60,12 +60,13 @@ GIT
 GIT
   remote: https://github.com/rawnet/chef-rails-app.git
   ref: master
-  sha: 88e28f2ee1fa69eed885d1a1bf5e5c5fc643aedf
+  sha: 544cd29fa135466aa8326a416a4aa2ce44c84ca8
   specs:
     rails-app (0.1.0)
       build-essential (>= 0.0.0)
       database (>= 0.0.0)
       hostsfile (>= 0.0.0)
+      mysql (>= 0.0.0)
 
 GIT
   remote: https://github.com/rawnet/chef-sphinx.git
